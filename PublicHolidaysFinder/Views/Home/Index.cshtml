@@ -25,6 +25,7 @@
             <thead>
                 <tr>
                     <th>Date</th>
+                    <th>Launch Year</th>
                     <th>Name</th>
                     <th>Local Name</th>
                     <th>Country Code</th>
@@ -34,13 +35,14 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>@item.Date.Value.ToShortDateString()</td>
-                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
-                        <td>@Html.DisplayFor(modelItem => item.LocalName)</td>
-                        <td>@Html.DisplayFor(modelItem => item.CountryCode)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Global)</td>
-                    </tr>
+                <tr>
+                    <td>@item.Date.Value.ToShortDateString()</td>
+                    <td>@Html.DisplayFor(modelItem => item.LaunchYear)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.LocalName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CountryCode)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Global)</td>
+                </tr>
                 }
             </tbody>
         </table>

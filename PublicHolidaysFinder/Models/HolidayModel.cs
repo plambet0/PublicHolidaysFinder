@@ -9,5 +9,7 @@ namespace PublicHolidaysFinder.ViewModels
         public DateTime? Date { get; set; }
         public string CountryCode { get; set; }
         public bool Global { get; set; }
+
+        public int? LaunchYear { get; set; }
     }
 }
